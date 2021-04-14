@@ -51,5 +51,3 @@ Please note this test is not a for a fail/pass scenario. We will use the test re
 If you're an agency or recruiter and want to use this test to evaluate your applicants, please get in touch with Cyber-Duck Ltd.
 
 Happy coding,
-
-Ramon Lapenta
