@@ -1,0 +1,285 @@
+<!-- Author: Ian de Almeida <ian.freelance@outlook.com> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Front-end test</title>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header-container">
+        
+        <!-- Pure CSS mobile tap menu using checkboxes -->
+        <input type="radio" name="menu-chk" role="close" id="close-chk" class="menu-radio" checked/>
+        <input type="radio" name="menu-chk" role="search" id="search-chk" class="menu-radio"/>
+        <input type="radio" name="menu-chk" role="burger" id="burger-chk" class="menu-radio"/>
+
+        <div class="header justify-center">
+
+            <!-- Logo that links to homepage -->
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class="logo" src="images/logo.png"/>
+                </a>
+            </div>
+            
+            <!-- Mobile buttons -->
+            <div class="button-container md-hide lg-hide">
+                
+                <!-- Search button -->
+                <label for="search-chk">
+                    <i class="ico-16px ico-search-white"></i>
+                </label>
+
+                <!-- Menu button -->
+                <label for="burger-chk">
+                    <i class="ico-20px ico-menu"></i>
+                </label>
+
+                <!-- Close button -->
+                <label for="close-chk">
+                    <i class="ico-16px ico-close"></i>
+                </label>
+
+            </div>
+            
+            <!-- Search text field -->
+            <div class="search-container sm-hide">
+                <div class="search sm-justify-center">
+                    <label for="search" class="sm-hide">Search site</label>
+                    <input type="text" class="sm-justify-stretch" name="search" id="search" placeholder="Search site"/>
+                    <i class="ico-16px ico-search"></i>
+                </div>
+            </div>
+
+        </div>
+        
+       
+        <!-- Navigation -->
+        <nav class="nav-items-container">
+            <div class="nav-items justify-center">
+                <ul class="nav-items-primary">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+                <ul class="nav-items-secondary sm-hide">
+                    <li>
+                        <a href="#"><i class="ico-16px ico-account"></i> Account</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ico-16px ico-help"></i> Help</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner-container">
+        <div class="banner-image">
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/small/banner-sm.jpg">
+                <source media="(min-width: 481px) and (max-width: 980px)" srcset="images/medium/banner-md.jpg">
+                <img src="images/large/banner-lg.jpg" alt="Bridge banner image">
+            </picture>
+        </div>
+        <div class="banner-text justify-center">
+            <h1>Donec faucibus aliquam erat, id pulvinar sem ultricies non</h1>
+            <a class="btn-md btn-orange">Read more</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="service-container">
+        <ul class="service-items justify-center">
+            <li>
+                <a href="#">
+                    <i class="ico-48px ico-helm"></i>
+                    <p>
+                        Lorem ipsum dolar sit amet,
+                        consectetur adipiscing elit
+                        Sed fringilla tristique pretium
+                    </p>
+                    <p>
+                        <span>read more</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ico-48px ico-stats"></i>
+                    <p>
+                        Etiam neque leo, placerat ac 
+                        varius id, pellentesque et 
+                        justo. Aenean eu pharetra
+                    </p>
+                    <p>
+                        <span>read more</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ico-48px ico-diamond"></i>
+                    <p>
+                        Prasent pellentesque nibh 
+                        fringilla, mattis odio nec,
+                        viverra ante. Donec elit enum
+                    </p>
+                    <p>
+                        <span>read more</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ico-48px ico-rocket"></i>
+                    <p>
+                        Morbi dapibus vitae justo eu 
+                        molestie. Vestibulum tempor 
+                        risus quis eros odio
+                    </p>
+                    <p>
+                        <span>read more</span>
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Quote section -->
+    <section class="quote-container">
+        <blockquote cite="#">
+            <p class="justify-center">Nulla elementum risus sit amet commodo rhoncus. Aenean malesuada luctus risus, sed aliquet metus tincidunt at.</p>
+        </blockquote>    
+    </section>
+    
+    <!-- News Stories -->
+    <section class="news-container">
+        <ul class="news-items justify-center">
+            <li>
+                <h2>Fusce gravida arcu</h2>
+                <img src="images/photo-bridge.jpg"/>
+                <span>THU 06/06/2019</span>
+                <p>
+                    Praesent venenatis elit ut nibh hendrerit
+                    bibendum. Nullam sed ultrices dui, nec 
+                    lobortis risus.
+                </p>
+                <a class="btn-sm btn-transparent" href="#">View more</a>
+            </li>
+            <li>
+                <h2>Nulla in porttitor sem</h2>
+                <img src="images/photo-eye.jpg"/>
+                <span>FRI 31/05/2019</span>
+                <p>
+                   Donec ut dui in justo sodales sodales. 
+                   Integer nec dictum dolor, ut auctor lectus.
+                   Curabitur risus diam, condimentum.
+                </p>
+                <a class="btn-sm btn-transparent" href="#">View more</a>
+            </li>
+            <li>
+                <h2>Fusce ac tortor tristuque orci nec lectus diam sed</h2>
+                <img src="images/photo-bigben.jpg"/>
+                <span>MON 27/05/2019</span>
+                <p>
+                    Carabitur risus diam, condimentum
+                    vehicula tincidunt sit amet, feugiat nec
+                    lectus. Sed condimentum ultrices.
+                </p>
+                <a class="btn-sm btn-transparent" href="#">View more</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Call to action section -->
+    <section class="cta-container">
+        <h3 class="justify-center">
+            Etiam lacinia, nulla at malesuada varius, tellus urna venenatis mi, nec tempus dolor lectus vel nisl
+        </h3>
+        <a class="btn-md btn-orange" href="#">Get in touch</a>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer-container">
+        <div class="footer-upper-container">
+            <div class="footer-upper justify-center clearfix">
+                <ul class="footer-links">
+                    <li>
+                        <a href="#"">Curabitur eget</a>
+                    </li>
+                    <li>
+                        <a href="#"">Placerat augue</a>
+                    </li>
+                    <li>
+                        <a href="#"">Nunc dignissim</a>
+                    </li>
+                    <li>
+                        <a href="#"">Porta arcu</a>
+                    </li>
+                    <li>
+                        <a href="#"">Sed vestibulum arcu</a>
+                    </li>
+                    <li>
+                        <a href="#"">Duis facilisis sed diam</a>
+                    </li>
+                    <li>
+                        <a href="#"">Fermentum</a>
+                    </li>
+                    <li>
+                        <a href="#"">Quisque facilisis nulla</a>
+                    </li>
+                    <li>
+                        <a href="#"">Sigittis pharetra</a>
+                    </li>
+                    <li>
+                        <a href="#"">Tortor pretium ut</a>
+                    </li>
+                </ul>
+                <ul class="socialmedia-links">
+                    <li><a href="#" alt="Twitter"><img src="images/icon-twitter.png" alt="Twitter"/></a></li>
+                    <li><a href="#" alt="Facebook"><img src="images/icon-facebook.png" alt="Facebook"/></a></li>
+                    <li><a href="#" alt="LinkedIn"><img src="images/icon-linkedin.png" alt="LinkedIn"/></a></li>
+                    <li><a href="#" alt="YouTube"><img src="images/icon-youtube.png" alt="YouTube"/></a></li>
+                </ul>
+                <div class="subscribe-form">
+                    <label for="email">Subscribe to our newsletter</label>
+                    <input type="email" name="email" id="email"/>
+                    <a class="btn-md btn-green" href="#">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower-container">
+            <div class="footer-lower justify-center">
+                <a class="back-to-top" href="#"><i class="ico-up ico-size-contain"></i></a>
+                <div>Copyright &copy;2019 All Rights Reserved</div>
+                <div><a class="link" href="#">Award winning web design</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

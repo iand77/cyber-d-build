@@ -1,0 +1,58 @@
+// Colours
+$grey-light:    #F0F0F0;
+$blue:          #3E6990;
+$blue-dark:     #1D3142;
+$green:         #8AA460;
+$orange:        #F39B6D;
+$yellow:        #E9E3B4;
+$text:          #737373;
+
+// New Colours
+$gray-dark:     #162532;
+$text-gray:     #ABABAB;
+$shadow:        #373737;
+
+// FOnts
+$body-font: 'Open Sans', sans-serif;
+$title-font: 'Merriweather', serif;
+
+// Breakppoints
+$smBreakpoint:  480px; // <- Need to change banner height to fixed at this breakpoint
+$mdBreakpoint:  980px; // <- Everything up to this breakpoint should render as mobile (i.e. mobile menu)
+$lgBreakpoint:  1400px;
+
+// Page width max
+$smInnerWidth:  62vw;
+$mdInnerWidth:  73vw;
+$lgInnerWidth:  1148px;
+
+
+// Icons
+$icon-sizes: 16px, 48px, 20px, ;
+
+$icon-urls: (
+    "help":             "../images/icon-help.png", 
+    "account":          "../images/icon-account.png",
+    "search":           "../images/icon-search.png",
+    "search-white":     "../images/icon-search-white.png",
+    "menu":             "../images/icon-menu.png",
+    "close":            "../images/icon-close.png",
+    "helm":             "../images/icon-helm.png",
+    "stats":            "../images/icon-stats.png",
+    "diamond":          "../images/icon-diamond.png",
+    "rocket":           "../images/icon-rocket.png",
+    "up":               "../images/icon-up.png",
+);
+
+// Breakpoints
+$breakpoints: (
+  'small-only':     'screen and (max-width:  #{$smBreakpoint})',
+  'mobile-only':    'screen and (max-width:  #{$mdBreakpoint})',
+  'tablet-only':    'screen and (min-width: #{$mdBreakpoint+1}) and ( max-width: #{$lgBreakpoint})',
+  'desktop-only':   'screen and (min-width:  #{$lgBreakpoint+1})',
+  'small-above':    'screen and (min-width: 0px)',
+  'mobile-above':   'screen and (min-width: #{$smBreakpoint+1})',
+  'tablet-above':   'screen and (min-width: #{$mdBreakpoint+1})',
+  'desktop-above':  'screen and (min-width: #{$lgBreakpoint+1})',
+  'tablet-below':   'screen and (max-width: #{$mdBreakpoint})',
+) !default;
